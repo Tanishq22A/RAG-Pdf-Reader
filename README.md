@@ -8,7 +8,10 @@ Built using **Streamlit**, **Google Gemini**, **Sentence Transformers**, and **C
 
 ## 📸 Screenshot
 
-*Add your web app screenshot here*
+<img width="1911" height="694" alt="image" src="https://github.com/user-attachments/assets/1261f07a-2ff0-4038-ae38-a2c56a513cda" />
+<img width="1903" height="1069" alt="image" src="https://github.com/user-attachments/assets/730fb0e5-073c-4642-bb3e-29e25d4016b1" />
+
+
 
 ---
 
@@ -121,8 +124,6 @@ http://localhost:8501
 
 ---
 
-<img width="1911" height="694" alt="image" src="https://github.com/user-attachments/assets/bcd7af9c-df33-4daf-9f0c-3d0340433626" />
-<img width="1903" height="1069" alt="image" src="https://github.com/user-attachments/assets/e982c56a-cfd8-4f7e-9896-62e97b3115da" />
 
 
 
