@@ -1,29 +1,59 @@
-# PDF Chatbot
+# 📄 PDF Chatbot (RAG-Based)
 
-A conversational AI app that lets you upload any PDF and ask questions about it. Built with Streamlit, Google Gemini, and ChromaDB.
+A conversational AI web app that allows users to upload PDF documents and ask questions about their content.
 
----
-
-## How It Works
-
-1. You upload a PDF
-2. The app extracts and splits the text into chunks
-3. Each chunk is converted into embeddings using a local sentence transformer model
-4. Embeddings are stored in ChromaDB
-5. When you ask a question, the most relevant chunks are retrieved and sent to Gemini to generate an answer
+Built using **Streamlit**, **Google Gemini**, **Sentence Transformers**, and **ChromaDB**.
 
 ---
 
-## Requirements
+## 📸 Screenshot
 
-- Python 3.9 or above
-- A Google Gemini API key (free tier works)
+*Add your web app screenshot here*
 
 ---
 
-## Installation
+## ✨ Features
 
-Clone or download the project, then open a terminal in the project folder and run:
+✔ Upload any text-based PDF
+✔ Ask questions in natural language
+✔ Semantic search using embeddings
+✔ Fast AI responses using Google Gemini
+✔ Local vector storage with ChromaDB
+✔ Clean and simple Streamlit interface
+
+---
+
+## 🧠 How It Works
+
+1. Upload a PDF
+2. Text is extracted and split into chunks
+3. Chucks are converted into embeddings
+4. Stored in ChromaDB vector database
+5. Relevant chunks retrieved for your query
+6. Gemini generates a contextual answer
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** Streamlit
+* **LLM:** Google Gemini API
+* **Embeddings:** Sentence Transformers
+* **Vector Database:** ChromaDB
+* **PDF Processing:** pdfplumber
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Tanishq22A/RAG-Pdf-Reader.git
+cd pdf-chatbot
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -31,57 +61,76 @@ pip install -r requirements.txt
 
 ---
 
-## Setup
+## 🔑 Setup API Key
 
-Open `app.py` and replace the API key on this line with your own:
+Open **app.py** and replace:
 
 ```python
 GOOGLE_API_KEY = "your-api-key-here"
 ```
 
-Get a free API key at: https://aistudio.google.com/app/apikey
+Get your API key:
+
+https://aistudio.google.com/app/apikey
 
 ---
 
-## Running the App
+## ▶️ Run the App
 
 ```bash
 streamlit run app.py
 ```
 
-The app will open in your browser at `http://localhost:8501`
+Open in browser:
+
+```
+http://localhost:8501
+```
 
 ---
 
-## Usage
+## 📌 Usage
 
-1. Upload a PDF using the file uploader
-2. Click **Process Document** to generate and store embeddings
-3. Type your question in the chat box at the bottom
-4. The assistant will answer based on the content of your PDF
-5. Click **Clear conversation** to reset the chat
-
----
-
-## Dependencies
-
-| Package | Purpose |
-|---|---|
-| streamlit | App interface |
-| pdfplumber | Extract text from PDFs |
-| chromadb | Store and retrieve embeddings |
-| google-generativeai | Gemini API for generating answers |
-| sentence-transformers | Local embeddings (free, no API needed) |
+1️⃣ Upload your PDF
+2️⃣ Click **Process Document**
+3️⃣ Ask questions in the chat box
+4️⃣ Get answers instantly
+5️⃣ Clear chat anytime
 
 ---
 
-## Common Errors
+## 📁 Project Structure
 
-**429 Quota exceeded**
-Your API key has hit the daily free limit. Either wait a few minutes, create a new Google Cloud project at https://aistudio.google.com, or enable billing at https://console.cloud.google.com/billing.
+```
+├── app.py
+├── requirements.txt
+├── chroma_db/
+├── images/
+│   └── demo.png
+└── README.md
+```
 
-**404 Model not found**
-The Gemini model name is outdated. The app currently uses `gemini-2.5-flash` which is the latest free-tier model.
+---
 
-**No text extracted**
-The PDF is likely scanned or image-based. This app only works with text-based PDFs.
+## 🔮 Future Improvements
+
+* Multi-PDF support
+* Chat history export
+* OCR for scanned PDFs
+* Cloud deployment
+
+---
+
+<img width="1911" height="694" alt="image" src="https://github.com/user-attachments/assets/bcd7af9c-df33-4daf-9f0c-3d0340433626" />
+<img width="1903" height="1069" alt="image" src="https://github.com/user-attachments/assets/e982c56a-cfd8-4f7e-9896-62e97b3115da" />
+
+
+
+## 🤝 Contributing
+
+Pull requests are welcome!
+Feel free to fork and improve.
+
+---
+
+⭐ If you like this project, consider giving it a star!
