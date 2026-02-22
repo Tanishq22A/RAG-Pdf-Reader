@@ -107,9 +107,7 @@ http://localhost:8501
 ```
 ├── app.py
 ├── requirements.txt
-├── chroma_db/
-├── images/
-│   └── demo.png
+├── chroma_db
 └── README.md
 ```
 
